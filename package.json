@@ -9,13 +9,16 @@
 	},
 	"devDependencies": {},
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"clean": "rm -r apify_storage && mkdir apify_storage",
+		"start": "node main.js",
+		"dev": "npm run clean && node main.js"
+		
 	},
 	"repository": {
 		"type": "git",
-		"url": ""
+		"url": "https://github.com/jdublu416/apify-scraping-challenge"
 	},
-	"author": "",
-	"license": "ISC",
-	"homepage": ""
+	"author": "Janet Warren",
+	"license": "ISC"
 }
