@@ -41,7 +41,7 @@ const getEventData = async ({ page, request }) => {
   // Function to get data from page
   const pageTitle = await page.title();
   const eventURL =  await page.$('.detail-c2.left > div.footer > a').href;
-    console.log(`this is the page object ${request.page}`);
+    console.log(`this is the page object ${page}`);
   const title = await page.$('.detail-c2.left > h1').innerText;
   const description = await page.$('.description.clearfix > p').innerText;
   const date = await page.$('.detail-c2.left > firstChild').innerText;
@@ -74,7 +74,7 @@ const getEventData = async ({ page, request }) => {
 
     return data;
 };
-const data = await page.$$eval('.athing', pageFunction);
+// const data = await page.$$eval('.athing', pageFunction);
 await Apify.pushData(data);
 };
 
