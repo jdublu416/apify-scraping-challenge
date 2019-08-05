@@ -13,7 +13,6 @@
 		"clean": "rm -r apify_storage && mkdir apify_storage",
 		"start": "node main.js",
 		"dev": "npm run clean && node main.js"
-		
 	},
 	"repository": {
 		"type": "git",
