@@ -1,0 +1,18 @@
+To run my code: npm run dev (after npm run install)
+
+First, Thank you for the opportunity to learn something new. I started by reading the documentation of both Apify and Puppeteer for
+this challenge.  Initially, I could run the example code once successfully and then I would get error codes to which Abigail
+suggested I delete the storage folder before each scrape. I changed the scripts to include a dev script that removes and then creates 
+a new folder.  This worked.
+
+I then went to the page to be scraped and tested the selectors in the console with the document.querySelector and validated the return values that
+I needed. However, I could not get the values to be read within the example function. (See line 119 in my comments, I used this link to get the
+puppeteer method I used). My values are returned as undefined.  I went into troubleshoot mode and was able to ascertain that my page object was not defined 
+either. I can humbly admit that I reached a point where I need to ask questions to a more experienced mentor. 
+
+This experience has shown me my weaknesses however, I have a greater understanding of web scraping and puppeteer. My previous experience was using cheerio
+and I had not been exposed to puppeteer at all.  I am able to scrape the page with puppeteer alone so it was frustrating to not be able to complete this
+coding challenge with successful code.
+
+Sincerely,
+Janet Warren
